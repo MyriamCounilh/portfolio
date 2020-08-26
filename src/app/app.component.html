@@ -1,0 +1,10 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav fxLayout="row" fxHide.sm fxHide.xs mode="side" opened class="sidenav">
+    <app-menu></app-menu>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

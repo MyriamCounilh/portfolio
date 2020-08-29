@@ -8,9 +8,8 @@
       </div>
       <div class="mat-h3">
         <div>Je suis développeuse d'application frontend junior. Je suis rigoureuse et méthodique.</div>
-        <div>Je vous partage mes différents projets via un portfolio
-      </div>
-        <div>Vous retrouverez également une de mes passions, la cuisine. J'ai créé un site de cuisine, je compte le réécrire avec une nouvelle stack et ajouter d'autres recettes</div>
+        <div>Je vous partage mes différents projets via un portfolio.</div>
+        <div>Vous retrouverez également une de mes passions, la cuisine. J'ai créé un site de cuisine, je compte le réécrire avec une nouvelle stack et ajouter d'autres recettes.</div>
       </div>
     <div fxLayoutGap="50px">
       <button mat-raised-button color="accent" routerLink ="portfolio.html">Portfolio</button>
@@ -21,18 +20,20 @@
   <div fxLayout="row">
     <a routerLink="/"><img src="assets/images/myriamCounilhMenu.png" alt="Photo Myriam Counilh Header" style="max-width: 100%; border-radius: 25%;"/></a>
   </div>
-
 </mat-toolbar>
 
-  <mat-toolbar color="primary" fxHide fxShow.sm fxShow.xs style="max-width: 100%; font-family: auto" >
-    <mat-toolbar-row>
-      <span> Myriam Counilh</span>
-    </mat-toolbar-row>
-    <mat-toolbar-row>
-      <span> Développeuse d'application frontend</span>
-    </mat-toolbar-row>
-    <mat-toolbar-row fxLayoutGap="50px" >
-      <button mat-raised-button color="accent" routerLink ="portfolio.html">Portfolio</button>
-      <a mat-raised-button color="accent" href="assets/CV.pdf" target="_blank">CV</a>
-    </mat-toolbar-row>
-  </mat-toolbar>
+<mat-toolbar color="primary" fxHide fxShow.sm fxShow.xs style="max-width: 100%; font-size: 16px" >
+  <mat-toolbar-row fxLayoutAlign="space-between end">
+    <span> Myriam Counilh</span>
+    <a href="https://www.linkedin.com/in/myriam-counilh-69564a179" target="_blank"><mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="Linkedin"></mat-icon></a>
+  </mat-toolbar-row>
+  <mat-toolbar-row fxLayoutAlign="space-between end">
+    <span> Développeuse d'application frontend</span>
+    <a href="https://github.com/MyriamCounilh" target="_blank"><mat-icon svgIcon="github" aria-hidden="true" aria-label="Github"></mat-icon></a>
+  </mat-toolbar-row>
+  <mat-toolbar-row fxLayoutAlign="space-between end" style="margin-bottom: 10px">
+    <button mat-raised-button color="accent" routerLink ="portfolio.html">Portfolio</button>
+    <a mat-raised-button color="accent" href="assets/CV.pdf" target="_blank">CV</a>
+    <mat-icon svgIcon="contact" aria-hidden="false" aria-label="Contact"></mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,17 @@
+<mat-card class="card" style="margin-top: 20px; margin-bottom: 20px; width: 420px; max-width: 420px">
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-subtitle>{{subTitle}}</mat-card-subtitle>
+  </mat-card-header>
+  <a href="{{link}}" target="_blank" fxLayoutAlign="center" style="margin-bottom: 15px">
+    <img src="{{image}}" alt="{{imageAlt}}" width="320" height="240">
+  </a>
+  <mat-card-content style="width: 400px; height: 20px">
+    <div *ngFor="let text of description" style="margin-bottom: 5px">{{text}}</div>
+  </mat-card-content>
+  <mat-card-actions >
+    <button mat-raised-button> J'aime</button>
+    <button mat-raised-button color="accent">Voir</button>
+    <button mat-raised-button color="primary">Partager</button>
+  </mat-card-actions>
+</mat-card>

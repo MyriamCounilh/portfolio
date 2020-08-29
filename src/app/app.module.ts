@@ -22,6 +22,7 @@ import {PortfolioComponent} from './portfolio/portfolio.component';
 
 import {RouterModule, Routes} from "@angular/router";
 import {MatButtonModule} from "@angular/material/button";
+import { PortfolioCardComponent } from './portfolio/portfolio-card/portfolio-card.component';
 
 
 const routes: Routes = [
@@ -40,7 +41,8 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    PortfolioCardComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

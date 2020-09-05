@@ -30,5 +30,13 @@ $candy-app-theme: mat-light-theme((
 // that you are using.
 @include angular-material-theme($candy-app-theme);
 
+:root {
+  --app-primary: #{mat-color($candy-app-primary)};
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+a, a:visited {
+  color: black;
+}

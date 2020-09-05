@@ -1,4 +1,4 @@
-<mat-card class="card" style="margin-top: 20px; margin-bottom: 20px; width: 420px; max-width: 420px">
+<mat-card class="card" style="margin-top: 20px; margin-bottom: 20px; width: 420px">
   <mat-card-header>
     <mat-card-title>{{title}}</mat-card-title>
     <mat-card-subtitle>{{subTitle}}</mat-card-subtitle>
@@ -10,8 +10,8 @@
     <div *ngFor="let text of description" style="margin-bottom: 5px">{{text}}</div>
   </mat-card-content>
   <mat-card-actions >
-    <button mat-raised-button> J'aime</button>
-    <button mat-raised-button color="accent">Voir</button>
-    <button mat-raised-button color="primary">Partager</button>
+    <button mat-button> J'aime</button>
+    <a href="{{link}}" target="_blank" button mat-raised-button color="primary">Voir</a>
+    <button mat-button>Partager</button>
   </mat-card-actions>
 </mat-card>

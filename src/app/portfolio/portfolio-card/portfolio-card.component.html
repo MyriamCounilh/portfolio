@@ -1,17 +1,18 @@
-<mat-card class="card" style="margin-top: 20px; margin-bottom: 20px; width: 420px">
+<mat-card class="card" style="margin-top: 20px; margin-bottom: 20px; width: 420px" fxFlex.xs="70%">
   <mat-card-header>
     <mat-card-title>{{title}}</mat-card-title>
     <mat-card-subtitle>{{subTitle}}</mat-card-subtitle>
   </mat-card-header>
   <a href="{{link}}" target="_blank" fxLayoutAlign="center" style="margin-bottom: 15px">
-    <img src="{{image}}" alt="{{imageAlt}}" width="320" height="240">
+    <img src="{{image}}" alt="{{imageAlt}}" width="320" style="max-width: 100%; height: auto;">
   </a>
-  <mat-card-content style="width: 400px; height: 20px">
+  <mat-card-content style="max-width: 400px; min-height: 20px">
     <div *ngFor="let text of description" style="margin-bottom: 5px">{{text}}</div>
   </mat-card-content>
-  <mat-card-actions >
-    <button mat-button> J'aime</button>
+  <mat-card-actions>
     <a href="{{link}}" target="_blank" button mat-raised-button color="primary">Voir</a>
-    <button mat-button>Partager</button>
+    <div fxFlex> </div>
+    <button mat-button disabled><mat-icon svgIcon="heart" aria-hidden="false" aria-label="J'aime"></mat-icon></button>
+    <button mat-button disabled><mat-icon svgIcon="share" aria-hidden="false" aria-label="Partager"></mat-icon></button>
   </mat-card-actions>
 </mat-card>

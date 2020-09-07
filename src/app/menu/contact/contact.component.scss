@@ -1,0 +1,31 @@
+.textArea {
+  width: 600px;
+  height: 80px;
+  margin-bottom: 80px;
+}
+
+mat-input-element {
+  font: inherit;
+  background: transparent;
+  color: currentColor;
+  border: none;
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: bottom;
+  text-align: inherit;
+}
+
+
+/*.mat-form-field-infix {
+  display: block;
+  position: relative;
+  flex: auto;
+  min-width: 0;
+  width: 180px;
+}*/
+
+/*.mat-form-field-infix {
+  padding: .5em 0;
+  border-top: .84375em solid transparent;
+}*/

@@ -1,4 +1,4 @@
-<div layout="column" layout-wrap style="margin-left: 40px; margin-top: 20px">
+<div layout="column" style="margin-left: 40px;">
   <div fxLayout="row wrap" fxLayoutGap="40px" fxLayout.sm="column">
      <app-portfolio-card *ngFor="let card of cards"
           [title]="card.title"
@@ -6,7 +6,9 @@
           [link]="card.link"
           [image]="card.image"
           [imageAlt]="card.imageAlt"
-          [description]="card.description">
+          [description]="card.description"
+          [technologie]="card.technologie">
      </app-portfolio-card>
+
   </div>
 </div>

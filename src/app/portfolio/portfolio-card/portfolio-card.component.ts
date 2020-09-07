@@ -6,6 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./portfolio-card.component.scss']
 })
 export class PortfolioCardComponent implements OnInit {
+  panelOpenState = false;
 
   @Input()
   title: string;
@@ -19,6 +20,8 @@ export class PortfolioCardComponent implements OnInit {
   imageAlt: string;
   @Input()
   description: string[];
+  @Input()
+  technologie: string;
 
   constructor() { }
 

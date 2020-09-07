@@ -1,4 +1,4 @@
-<mat-card class="card" style="margin-top: 20px; margin-bottom: 20px; width: 420px" fxFlex.xs="70%">
+<mat-card class="card" style="margin-top: 20px; margin-bottom: 20px; min-height: 433px; width: 420px" fxFlex.xs="70%">
   <mat-card-header>
     <mat-card-title>{{title}}</mat-card-title>
     <mat-card-subtitle>{{subTitle}}</mat-card-subtitle>
@@ -15,4 +15,17 @@
     <button mat-button disabled><mat-icon svgIcon="heart" aria-hidden="false" aria-label="J'aime"></mat-icon></button>
     <button mat-button disabled><mat-icon svgIcon="share" aria-hidden="false" aria-label="Partager"></mat-icon></button>
   </mat-card-actions>
+  <mat-card-footer>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-description>
+            Technologies utilisées
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        {{technologie}}
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card-footer>
 </mat-card>

@@ -19,9 +19,9 @@ export class PortfolioCardComponent implements OnInit {
   @Input()
   imageAlt: string;
   @Input()
-  description: string[];
+  descriptions: string[];
   @Input()
-  technologie: string;
+  technologies: string[];
 
   constructor() { }
 

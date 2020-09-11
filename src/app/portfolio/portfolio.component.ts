@@ -6,8 +6,8 @@ interface CardModel {
   link: string;
   image: string;
   imageAlt: string;
-  description: string[];
-  technologie: string;
+  descriptions: string[];
+  technologies: string[];
 }
 
 @Component({
@@ -24,8 +24,8 @@ export class PortfolioComponent implements OnInit {
       link: 'https://www.cookpress.fr/',
       image: '/assets/images/cookpress.webp',
       imageAlt: 'Site de cuisine',
-      description: ['Blog accès sur le domaine de la cuisine.'],
-      technologie: 'html5'
+      descriptions: ['Blog accès sur le domaine de la cuisine.'],
+      technologies: ['Html 5', 'Css 3', 'Bootstrap', 'Angular 7', 'TypeScript', 'REST', 'Java 8', 'Serverless Quarkus', 'MicroProfile', 'MariaDb']
     },
     {
       title: 'Chalet et Caviar',
@@ -33,8 +33,8 @@ export class PortfolioComponent implements OnInit {
       link: 'https://projet2.myriamcounilh.fr/',
       image: '/assets/images/projet2.webp',
       imageAlt: 'projet WordPress',
-      description: ['Créer un site pour promouvoir la vente et la location des chalets.'],
-      technologie: 'wordpress'
+      descriptions: ['Créer un site pour promouvoir la vente et la location des chalets.'],
+      technologies: ['Wordpress']
     },
     {
       title: 'Les Films de Plein Air',
@@ -42,8 +42,8 @@ export class PortfolioComponent implements OnInit {
       link: 'https://projet3.myriamcounilh.fr/',
       image: '/assets/images/projet3.webp',
       imageAlt: 'Films de plein air',
-      description: ['Objectif projeter des films d’auteur qui se déroule du 5 au 8 août de 18h à minuit au parc Monceau à Paris.'],
-      technologie: 'html5'
+      descriptions: ['Objectif projeter des films d’auteur qui se déroule du 5 au 8 août de 18h à minuit au parc Monceau à Paris.'],
+      technologies: ['Html 5', 'Css 3', 'Bootstrap', 'Angular 8', 'TypeScript']
     },
     {
       title: 'Générateur de citations !',
@@ -51,8 +51,8 @@ export class PortfolioComponent implements OnInit {
       link: 'https://projet5.myriamcounilh.fr/',
       image: '/assets/images/projet5.webp',
       imageAlt: 'Générateur de citations !',
-      description: ['Construire un générateur de citations, elles seront construites aléatoirement en assemblant des morceaux de phrases.'],
-      technologie: 'javascript'
+      descriptions: ['Construire un générateur de citations, elles seront construites aléatoirement en assemblant des morceaux de phrases.'],
+      technologies: ['Html 5', 'Css 3', 'Bootstrap','Javascript', 'Jquery']
     },
     {
       title: 'Jeu de plateau en JS',
@@ -60,8 +60,8 @@ export class PortfolioComponent implements OnInit {
       link: 'https://projet6.myriamcounilh.fr/',
       image: '/assets/images/projet6.webp',
       imageAlt: 'jeu de plateau',
-      description: ['Créer un jeu en ligne en JavaScript\, où deux joueurs s\'affrontent.'],
-      technologie: 'javascript'
+      descriptions: ['Créer un jeu en ligne en JavaScript, où deux joueurs s\'affrontent.'],
+      technologies: ['Html 5', 'Css 3', 'Bootstrap','Javascript', 'Jquery']
     },
     {
       title: 'Site d\'avis de restaurants',
@@ -69,8 +69,8 @@ export class PortfolioComponent implements OnInit {
       link: 'https://projet7.myriamcounilh.fr/',
       image: '/assets/images/projet7.webp',
       imageAlt: 'avis de restaurants',
-      description: ['Créer un service simple et utile qui permet d\'avoir des avis sur des restaurants autour de soi'],
-      technologie: 'javascript'
+      descriptions: ['Créer un service simple et utile qui permet d\'avoir des avis sur des restaurants autour de soi'],
+      technologies: ['Html 5', 'Css 3', 'Bootstrap', 'VueJs', 'VueX', 'REST', 'Google API', 'SessionStorage']
     },
     {
       title: 'To-do list',
@@ -78,9 +78,18 @@ export class PortfolioComponent implements OnInit {
       link: 'https://projet8.myriamcounilh.fr/',
       image: '/assets/images/projet8.webp',
       imageAlt: 'To-do list',
-      description: ['Reprendre un projet existant\, corriger des bugs\, ajouter des tests\, et optimiser sa performance'],
-      technologie: 'javascript'
-    }
+      descriptions: ['Reprendre un projet existant, corriger des bugs, ajouter des tests, et optimiser sa performance'],
+      technologies: ['Javascript', 'Jasmine']
+    },
+    {
+      title: 'Myriam Counilh',
+      subTitle: 'CV et Porfolio',
+      link: 'https://www.myriamcounilh.fr',
+      image: '/assets/images/myriamCounilh.webp',
+      imageAlt: 'Myriam Counilh',
+      descriptions: ['Je suis développeuse d\'application frontend junior. Je suis rigoureuse et méthodique.'],
+      technologies: ['Html 5', 'Css 3', 'Material', 'Angular 10', 'TypeScript']
+    },
   ];
   constructor() { }
 

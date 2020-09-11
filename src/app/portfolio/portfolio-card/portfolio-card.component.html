@@ -7,25 +7,22 @@
     <img src="{{image}}" alt="{{imageAlt}}" width="320" style="max-width: 100%; height: auto;">
   </a>
   <mat-card-content style="max-width: 400px; min-height: 20px">
-    <div *ngFor="let text of description" style="margin-bottom: 5px">{{text}}</div>
+    <div *ngFor="let description of descriptions" style="margin-bottom: 5px">{{description}}</div>
   </mat-card-content>
   <mat-card-actions>
-    <a href="{{link}}" target="_blank" button mat-raised-button color="primary">Voir</a>
+    <a href="{{link}}" target="_blank" mat-raised-button color="primary">Voir</a>
     <div fxFlex> </div>
     <button mat-button disabled><mat-icon svgIcon="heart" aria-hidden="false" aria-label="J'aime"></mat-icon></button>
     <button mat-button disabled><mat-icon svgIcon="share" aria-hidden="false" aria-label="Partager"></mat-icon></button>
   </mat-card-actions>
   <mat-card-footer>
-    <mat-accordion>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-description>
-            Technologies utilisées
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-        {{technologie}}
-      </mat-expansion-panel>
+    <mat-accordion >
+        <mat-chip-list>
+          <mat-chip color="accent"  selected style="margin-left: 10px; margin-bottom: 10px;"
+            *ngFor="let technologie of technologies">
+            {{technologie}}
+          </mat-chip>
+        </mat-chip-list>
     </mat-accordion>
   </mat-card-footer>
 </mat-card>

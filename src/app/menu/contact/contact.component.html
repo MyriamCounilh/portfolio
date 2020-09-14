@@ -1,6 +1,6 @@
 <div style="padding-left: 20px; margin-top: 20px">
-  <div class="container" fxLayout="row">
-    <mat-form-field fxLayoutAlign="start start" style="width: 200px; padding-top: 10px">
+  <div class="container" fxLayout="row" style="padding-top: 10px">
+    <mat-form-field fxLayoutAlign="start start" style="">
       <mat-label>Civilité</mat-label>
       <mat-select [(ngModel)]="modeselect" [placeholder]="modeselect">
         <mat-option value="Monsieur">M</mat-option>
@@ -8,7 +8,7 @@
       </mat-select>
     </mat-form-field>
     <br/>
-    <mat-form-field fxLayoutAlign="end end" style="width: 400px; padding-top: 10px">
+    <mat-form-field style="width: 400px; padding-left: 40px">
       <mat-label>Nom</mat-label>
       <input matInput>
     </mat-form-field>
@@ -26,6 +26,6 @@
       <textarea matInput style="padding-bottom: 60px"></textarea>
     </mat-form-field>
   </div>
-  <button mat-raised-button color="primary" style="margin-bottom: 20px">Valider</button>
+  <button disabled mat-raised-button color="primary" style="margin-bottom: 20px">Valider</button>
 </div>
 

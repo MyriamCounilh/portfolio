@@ -31,12 +31,15 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
+import { CertificatsComponent } from './certificats/certificats.component';
+import {MatMenuModule} from "@angular/material/menu";
 
 
 const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'portfolio', component: PortfolioComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'certificats', component: CertificatsComponent},
 ];
 
 
@@ -51,34 +54,36 @@ const routes: Routes = [
     MainComponent,
     PortfolioComponent,
     PortfolioCardComponent,
-    ContactComponent
+    ContactComponent,
+    CertificatsComponent
   ],
-    imports: [
-        RouterModule.forRoot(routes),
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatToolbarModule,
-        MatSidenavModule,
-        ReactiveFormsModule,
-        HttpClientModule,
-        FormsModule,
-        FlexModule,
-        FlexLayoutModule,
-        MatIconModule,
-        MatListModule,
-        MatGridListModule,
-        MatButtonModule,
-        MatCardModule,
-        MatExpansionModule,
-        MatFormFieldModule,
-        MatSelectModule,
-        MatDatepickerModule,
-        MatNativeDateModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatChipsModule
-    ],
+  imports: [
+    RouterModule.forRoot(routes),
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
+    FlexModule,
+    FlexLayoutModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatButtonModule,
+    MatCardModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatChipsModule,
+    MatMenuModule
+  ],
 
   providers: [],
   bootstrap: [AppComponent]

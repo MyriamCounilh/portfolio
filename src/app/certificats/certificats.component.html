@@ -1,0 +1,11 @@
+<p fxLayoutAlign="end center"  style="margin-top: 10px; margin-right: 20px">
+  <a mat-raised-button color="accent" href="{{certificatList.selectedOptions.selected[0]?.value.link}}" target="_blank">
+    Regarder le certificat
+  </a>
+</p>
+<mat-selection-list #certificatList [multiple]="false">
+  <mat-list-option *ngFor="let certificat of certificats" [value]="certificat">
+    <div fxFlex="grow">{{certificat.title}}</div>
+  </mat-list-option>
+</mat-selection-list>
+

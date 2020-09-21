@@ -76,9 +76,11 @@ export class CertificatsComponent implements OnInit {
  ];
 
 
+
+
   constructor() { }
 
   ngOnInit(): void {
-  }
 
+  }
 }

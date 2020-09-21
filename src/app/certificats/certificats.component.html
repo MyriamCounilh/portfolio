@@ -1,5 +1,5 @@
 <p fxLayoutAlign="end center"  style="margin-top: 10px; margin-right: 20px">
-  <a mat-raised-button color="accent" href="{{certificatList.selectedOptions.selected[0]?.value.link}}" target="_blank">
+  <a mat-raised-button  disabled="{{!certificatList.selectedOptions.selected[0]?.value}}" color="accent" href="{{certificatList.selectedOptions.selected[0]?.value.link}}" target="_blank">
     Regarder le certificat
   </a>
 </p>

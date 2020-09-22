@@ -1,4 +1,4 @@
-<mat-toolbar class="header" fxShow fxHide.lt-md style="padding-top: 10px;">
+<mat-toolbar class="header" fxLayoutAlign="space-between end" fxShow fxHide.lt-md style="padding-top: 10px;">
   <div fxLayout="column">
       <div class="mat-display-3" style="margin: 0;">
         Myriam Counilh
@@ -6,49 +6,38 @@
       <div class="mat-headline">
         Développeuse d'application frontend
       </div>
-      <div class="mat-small">
+      <div class="mat-h4">
         <div>Je suis développeuse d'application frontend junior. Je suis rigoureuse et méthodique.</div>
         <div>Je vous partage mes différents projets via un portfolio.</div>
         <div>Vous retrouverez également une de mes passions, la cuisine.</div>
         <div>J'ai créé un site de cuisine, je compte le réécrire avec une nouvelle stack et ajouter d'autres recettes.</div>
       </div>
-    <div fxLayoutGap="50px" style="padding-top: 10px;">
-      <button mat-raised-button color="accent" routerLink ="portfolio">Portfolio</button>
-      <a mat-raised-button color="accent" href="assets/CV.pdf" target="_blank">CV</a>
-      <button mat-raised-button color="accent" routerLink ="certificats">Certificats</button>
-    </div>
-  </div>
-  <div fxFlex=""></div>
-  <div fxLayout="row">
-    <a routerLink="/"><img src="assets/images/myriamCounilhMenu.png" alt="Photo Myriam Counilh Header" style="width: 140px; border-radius: 25%;"/></a>
   </div>
 </mat-toolbar>
 
 <mat-toolbar color="primary" fxHide fxShow.sm fxShow.xs style="max-width: 100%; font-size: 16px" >
   <mat-toolbar-row fxLayoutAlign="space-between end">
-    <span> Myriam Counilh</span>
-    <a href="https://www.linkedin.com/in/myriam-counilh-69564a179" target="_blank"><mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="Linkedin"></mat-icon></a>
-  </mat-toolbar-row>
-  <mat-toolbar-row fxLayoutAlign="space-between end">
-    <span> Développeuse d'application frontend</span>
-    <a href="https://github.com/MyriamCounilh" target="_blank"><mat-icon svgIcon="github" aria-hidden="true" aria-label="Github"></mat-icon></a>
+    <a routerLink="/"><img src="assets/images/myriamCounilhMenu.png" title="Myriam Counilh Développeuse d'application frontend"  alt="Photo Myriam Counilh Header" style="width: 100px; border-radius: 25%; margin-top: 10px"/></a>
+    <div fxLayout="column" fxLayoutAlign="space-between center">
+      <a href="https://www.linkedin.com/in/myriam-counilh-69564a179" target="_blank"><mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="Linkedin"></mat-icon></a>
+      <a href="https://github.com/MyriamCounilh"  target="_blank"><mat-icon svgIcon="github" aria-hidden="false" aria-label="Github"></mat-icon></a>
+      <a routerLink="contact" ><mat-icon svgIcon="contact" aria-hidden="false"  aria-label="Contact"></mat-icon></a>
+    </div>
   </mat-toolbar-row>
   <mat-toolbar-row fxLayoutAlign="space-between end"  style="margin-bottom: 10px" fxHide.xs>
     <button mat-raised-button color="accent" routerLink ="portfolio">Portfolio</button>
     <a mat-raised-button color="accent" href="assets/CV.pdf" target="_blank">CV</a>
     <button mat-raised-button color="accent" routerLink ="certificats">Certificats</button>
-    <a routerLink="contact" mat-icon-button><mat-icon svgIcon="contact" aria-hidden="false" aria-label="Contact"></mat-icon></a>
   </mat-toolbar-row>
 
-  <mat-toolbar-row fxLayoutAlign="space-between end"  style="margin-bottom: 10px" fxHide fxShow.xs>
-    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-toolbar-row fxLayoutAlign="end end"  style="margin-bottom: 10px" fxHide fxShow.xs>
+    <button mat-icon-button [matMenuTriggerFor]="menu" color="accent" aria-label="Hamburger" style="padding: inherit">
       <mat-icon svgIcon="menu" aria-hidden="false" aria-label="J'aime"></mat-icon>
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item routerLink ="portfolio">Portfolio</button>
       <a mat-menu-item href="assets/CV.pdf" target="_blank">CV</a>
       <button mat-menu-item routerLink ="certificats">Certificats</button>
-      <a  mat-menu-item routerLink="contact">Contact</a>
     </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>

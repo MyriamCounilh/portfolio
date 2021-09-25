@@ -1,0 +1,37 @@
+<div style="padding-left: 20px; margin-top: 20px">
+   <form [formGroup]="form">
+      <div class="container" fxLayout="row" style="padding-top: 10px">
+         <mat-form-field fxLayoutAlign="start start">
+            <mat-label>Civilité</mat-label>
+            <mat-select [formControl]="civility">
+               <mat-option value="Monsieur">M</mat-option>
+               <mat-option value="Madame">Mme</mat-option>
+            </mat-select>
+         </mat-form-field>
+         <br/>
+         <mat-form-field style="width: 400px; padding-left: 40px">
+           <mat-label>Nom</mat-label>
+           <input matInput [formControl]="name" required/>
+           <mat-error *ngIf="name.errors?.required">Le nom est obligatoire</mat-error>
+         </mat-form-field>
+      </div>
+      <div class="containerEmail" style="margin-top: 20px; padding-top: 10px"  fxLayout="row" fxLayoutAlign="start start">
+         <mat-form-field style="width: 500px">
+           <mat-label>Entrer votre adresse email</mat-label>
+           <input matInput placeholder="pat@example.com" [formControl]="email" required/>
+           <mat-error *ngIf="email.errors?.required">L'email est obligatoire</mat-error>
+           <mat-error *ngIf="email.errors?.email">L'adresse email n'est pas dans les normes "pat@example.com"</mat-error>
+         </mat-form-field>
+      </div>
+      <div style="padding-top: 20px;">
+         <mat-form-field  class="textArea">
+           <mat-label>Merci d'écrire votre message</mat-label>
+           <textarea [formControl]="textArea" matInput style="padding-bottom: 60px" required></textarea>
+           <mat-error *ngIf="textArea.errors?.required">Champ obligatoire</mat-error>
+           <mat-error *ngIf="textArea.errors?.minlength">Minimum 8 caractères</mat-error>
+         </mat-form-field>
+      </div>
+   </form>
+   <button [disabled]="!form.valid" mat-raised-button color="primary" style="margin-bottom: 20px" (click)="sendForm()" >Valider</button>
+</div>
+

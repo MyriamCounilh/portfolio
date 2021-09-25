@@ -12,18 +12,20 @@
   <mat-card-actions fxLayoutAlign="space-between center">
     <a href="{{link}}" target="_blank" mat-raised-button color="primary">Voir</a>
     <div fxLayoutAlign="end center">
-      <button mat-icon-button color="primary"><mat-icon svgIcon="heart" aria-hidden="false" aria-label="J'aime"></mat-icon></button>
+      <button mat-icon-button color="primary"><mat-icon matBadge="{{badge}}" [matBadgeHidden]="badge === 0"  matBadgeSize="small" matBadgeColor="accent" svgIcon="heart" aria-hidden="false" aria-label="J'aime"></mat-icon></button>
       <button mat-icon-button color="accent"><mat-icon svgIcon="share" aria-hidden="false" aria-label="Partager"></mat-icon></button>
     </div>
   </mat-card-actions>
   <mat-card-footer>
-    <mat-accordion >
+    <mat-accordion>
+      <div class="mat-chip-list-wrapper">
         <mat-chip-list>
-          <mat-chip color="accent"  selected style="margin-left: 10px; margin-bottom: 10px;"
+          <mat-chip color="accent" fxLayoutGap="20px" selected
             *ngFor="let technologie of technologies">
             {{technologie}}
           </mat-chip>
         </mat-chip-list>
+      </div>
     </mat-accordion>
   </mat-card-footer>
 </mat-card>

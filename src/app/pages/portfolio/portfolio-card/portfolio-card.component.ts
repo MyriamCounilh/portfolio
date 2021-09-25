@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { PortfolioComponent } from '../portfolio.component';
 
 @Component({
   selector: 'app-portfolio-card',
@@ -6,8 +7,6 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./portfolio-card.component.scss']
 })
 export class PortfolioCardComponent implements OnInit {
-  panelOpenState = false;
-
   @Input()
   title: string;
   @Input()
@@ -22,10 +21,12 @@ export class PortfolioCardComponent implements OnInit {
   descriptions: string[];
   @Input()
   technologies: string[];
+  @Input()
+  badge: number;
 
-  constructor() { }
+  constructor() {  
+  }
 
   ngOnInit(): void {
   }
-
 }
